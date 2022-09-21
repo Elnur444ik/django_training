@@ -48,7 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'board.middleware.filter_ip_middleware.FilterIPMiddleware'
+    'board.middleware.filter_ip_middleware.FilterIPMiddleware',
+    #'board.middleware.request_delay.RequestDelay',
+    'board.middleware.request_limit.RequestLimit',
 ]
 
 ROOT_URLCONF = 'board.urls'
