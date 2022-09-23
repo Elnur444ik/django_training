@@ -1,14 +1,7 @@
 <html>
-
-<ul>
-    <li>
-        <a href="/advertisement1">Мастер на час</a>
-    </li>
-    <li>
-        Выведение из запоя
-    </li>
-    <li>
-        Услуги экскаватора-погрузчика, гидромолота, ямобура
-    </li>
-</ul>
+   <ul>
+   {% for advertisement in advertisements %}
+        <li>{{ advertisement }}</li>
+   {% endfor %}
+   </ul>
 </html>
